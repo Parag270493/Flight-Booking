@@ -27,16 +27,3 @@ button:disabled {
     cursor: not-allowed;
 }
 
-table {
-    margin: auto;
-    text-align: center;
-    color: white;
-    border-collapse: collapse;
-}
-
-table td,
-table th {
-    border: 1px solid white;
-    padding: 10px;
-    min-width: 160pxs;
-}

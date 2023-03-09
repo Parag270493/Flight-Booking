@@ -24,39 +24,6 @@
       "children": "",
       "infant": "",
       "id": 3
-    },
-    {
-      "from": "Nagpur",
-      "to": "Pune",
-      "date": "20/03/2022",
-      "preffered": "indiGo",
-      "seating": "business",
-      "adult": 1,
-      "children": "",
-      "infant": "",
-      "id": 4
-    },
-    {
-      "from": "Nagpur",
-      "to": "Pune",
-      "date": "20/03/2022",
-      "preffered": "airIndia",
-      "seating": "business",
-      "adult": 1,
-      "children": "",
-      "infant": "",
-      "id": 5
-    },
-    {
-      "from": "Nagpur",
-      "to": "Pune",
-      "date": "20/03/200",
-      "preffered": "indiGo",
-      "seating": "business",
-      "adult": 1,
-      "children": "",
-      "infant": "",
-      "id": 6
     }
   ],
   "list": [

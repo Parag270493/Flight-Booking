@@ -3,7 +3,6 @@
   <div class="seller-auth">
     <div *ngIf="!showLogin" class="singup">
         <h1>Sign-up</h1>
-        <p class="message-p">{{loginMessage}}</p>
         <form #SingUp="ngForm" (ngSubmit)="signUp(SingUp.value)" class="common-form">
             <input class="form-input" type="text" name="name" ngModel placeholder="Enter Name" #name="ngModel" required>
             <p class="invalid-input"><span *ngIf="name.invalid && name.touched"> Please Enter Name</span></p>
@@ -11,7 +10,7 @@
             <p class="invalid-input"><span *ngIf="password.invalid && password.touched"> Please Enter Valid Password</span></p>
             <input class="form-input" type="text" name="email"   ngModel placeholder="Enter the Email" #email="ngModel" required email>
             <p class="invalid-input"><span *ngIf="email.invalid && email.touched"> Please Enter Valid Email</span></p> 
-            <button [disabled]="SingUp.invalid"  class="form-button">SignUp</button>
+            <button [disabled]="SingUp.invalid" (click)="handleClear()" class="form-button">SignUp</button>
             <a class="auth-toggle-link" (click)="openLogin()">Already have account ? Click to Login</a> 
 
         </form>

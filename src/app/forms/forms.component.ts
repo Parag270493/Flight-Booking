@@ -22,9 +22,6 @@ export class FormsComponent {
       { observe: 'response' }
     ).subscribe((result) => {
       localStorage.setItem('data', JSON.stringify(result.body))
-      if(result){
-        this.loginMessage = "Registration is Successfull"
-      }
     });
   }
   userLogin(data: Login) {
@@ -54,5 +51,8 @@ export class FormsComponent {
   }
   openSignUp() {
     this.showLogin = false;
+  }
+  handleClear(){
+    this.showLogin = true;
   }
 }
