@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: sans-serif;
+    background-image: url(./assets/Image/airplane-659687_1920.jpg);
+    background-size: cover;
+}
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+.common-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+.form-input {
+    height: 35px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    padding-left: 15px;
+    color: white;
+}
+
+.form-button {
+    height: 35px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.error-p{
+    color: red;
+}
+.message-p{
+    color: green;
+}

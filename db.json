@@ -1,0 +1,100 @@
+{
+  "info": [
+    {
+      "name": "parag",
+      "password": "abc@123",
+      "email": "Parag@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "pa",
+      "password": "abc@123",
+      "email": "pa@gmail.com",
+      "id": 2
+    }
+  ],
+  "dashboard": [
+    {
+      "from": "Nagpur",
+      "to": "Pune",
+      "date": "20/03/2022",
+      "preffered": "indiGo",
+      "seating": "economy",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 3
+    },
+    {
+      "from": "Nagpur",
+      "to": "Pune",
+      "date": "20/03/2022",
+      "preffered": "indiGo",
+      "seating": "business",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 4
+    },
+    {
+      "from": "Nagpur",
+      "to": "Pune",
+      "date": "20/03/2022",
+      "preffered": "airIndia",
+      "seating": "business",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 5
+    },
+    {
+      "from": "Nagpur",
+      "to": "Pune",
+      "date": "20/03/200",
+      "preffered": "indiGo",
+      "seating": "business",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 6
+    }
+  ],
+  "list": [
+    {
+      "flightId": "#435",
+      "from": "Nagpur",
+      "to": "Pune",
+      "time": "10:00 AM"
+    },
+    {
+      "flightId": "#935",
+      "from": "Nagpur",
+      "to": "Pune",
+      "time": "12:00 PM"
+    },
+    {
+      "flightId": "#898",
+      "from": "Nagpur",
+      "to": "Pune",
+      "time": "5:00 PM"
+    },
+    {
+      "flightId": "#59",
+      "from": "Nagpur",
+      "to": "Mumbai",
+      "time": "5:00 PM"
+    },
+    {
+      "flightId": "#69",
+      "from": "Nagpur",
+      "to": "Banglore",
+      "time": "5:00 PM"
+    },
+    {
+      "flightId": "#69",
+      "from": "Banglore",
+      "to": "Pune",
+      "time": "5:00 PM"
+    }
+  ]
+}

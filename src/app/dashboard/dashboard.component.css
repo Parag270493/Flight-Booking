@@ -1,0 +1,130 @@
+
+#form{
+    background-color: #000;
+    height: 512px;
+    width: 461px;
+    margin: auto;
+    padding: 20px;
+    opacity: 0.7;
+}
+#form h3{
+    border-bottom: 2px solid #3399ff;
+    width:210px;
+    padding: 5px;
+}
+::placeholder{
+    color:#fff
+}
+#input #input-group{
+    width:300px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:#fff
+}
+#input2 #input-group{
+    width:195px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:#fff
+}
+#input3 #input-group{
+    margin-left: 50px;
+}
+#input4 #input-group{
+    width:300px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:#fff
+}
+#input4 #input-group1{
+    width:615px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:#fff
+}
+#input5 h3{
+    border-bottom: 2px solid #3399ff;
+    width:220px;
+    padding: 5px;
+}
+#input6 #input-group{
+    width:300px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:#fff
+}
+#input6 #input-group1{
+    width:615px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:#fff
+}
+.bookTicket {
+    margin-top: 52px;
+}
+.bookNow {
+    margin-right: 31px;
+}
+.bookingForm{
+    color: white;
+}
+.invalid-input {
+    color: red;
+    font-size: 15px;
+    margin-top: -9px
+}
+button:disabled{
+    cursor: not-allowed;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+    margin-left: -33rem;
+}
+.flightDetails {
+    display: flex;
+    align-items: center;
+}
+.flight-list {
+    margin-top: -16rem;
+}
+table{
+    text-align: left;
+    color: white;
+    border-collapse: collapse;
+}
+
+table td , table th{
+    border: 1px solid white;
+    padding: 10px;
+    min-width: 160pxs;
+}
+.list{
+    color: #fff;
+}
+.flightMessage{
+    color: white;
+}
