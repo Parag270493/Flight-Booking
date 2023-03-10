@@ -21,7 +21,7 @@
 
     <div *ngIf="showLogin" class="singup">
         <h1>Login</h1>
-        <p class="error-p">{{authError}}</p>
+        <p class="error-p">{{registrationErrorMessage}}</p>
         <form #SingIn="ngForm" (ngSubmit)="signIn(SingIn.value)" class="common-form">
             <input class="form-input" type="text" name="email"   ngModel placeholder="Enter the Email" #email = 'ngModel'required email >
             <p class="invalid-input"><span *ngIf="email.invalid && email.touched"> Please Enter Valid Value</span></p>

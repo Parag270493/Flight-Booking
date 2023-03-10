@@ -10,8 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class FormsComponent {
   showLogin = false;
-  authError : string = '';
-  loginMessage: string = '';
+  registrationErrorMessage : string = '';
   isLoginError = new EventEmitter<boolean>(false)
   addProductMessage: string ='';
   constructor( private router: Router,private http:HttpClient) { }
@@ -22,27 +21,24 @@ export class FormsComponent {
     data,
       { observe: 'response' }
     ).subscribe((result) => {
-      // localStorage.setItem('data', JSON.stringify(result.body))
       this.addProductMessage = "Registration is done successfully"
     });
   }
-  
+
   signIn(data:Login){
-    this.authError = '';
+    // this.authError = '';
     this.userLogin(data);
     this.isLoginError.subscribe((isError)=>{
       if(isError){
-        this.authError = 'Email or Password is incorrect'; 
+        this.registrationErrorMessage = 'Email or Password is incorrect'; 
       }
     })
   }
   userLogin(data: Login) {
-    // console.log(data);
     this.http.get(`http://localhost:3000/info?email=${data.email}&password=${data.password}`,
       { observe: 'response' }
     ).subscribe((result: any) => {
       if (result && result.body && result.body.length) {
-        // localStorage.setItem('data', JSON.stringify(result.body))
         this.router.navigate(['dashboard'])
       } else {
         this.isLoginError.emit(true);
@@ -56,7 +52,4 @@ export class FormsComponent {
   openSignUp() {
     this.showLogin = false;
   }
-  // handleClear(){
-  //   this.showLogin = true;
-  // }
 }
