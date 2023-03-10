@@ -13,9 +13,7 @@ export class DashboardComponent {
   flightBookedMessage : string = '';
   showNameOfDepature:any;
   showNameOfDestination:any;
-  constructor(private route:Router,private http:HttpClient){
-
-  }
+  constructor(private route:Router,private http:HttpClient){}
   ticketBook(data:any){
     this.showNameOfDepature = data.from
     this.showNameOfDestination = data.to
