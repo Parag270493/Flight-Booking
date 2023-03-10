@@ -8,8 +8,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-  isLoginError = new EventEmitter<boolean>(false);
-  authError : string = '';
   listOfFlight:any;
   showFlightList:boolean = false;
   flightBookedMessage : string = '';
@@ -19,7 +17,6 @@ export class DashboardComponent {
 
   }
   ticketBook(data:any){
-    console.log(data);
     this.showNameOfDepature = data.from
     this.showNameOfDestination = data.to
     this.http.get('http://localhost:3000/list').subscribe((result:any)=>{

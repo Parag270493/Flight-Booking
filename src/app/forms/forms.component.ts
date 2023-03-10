@@ -13,6 +13,7 @@ export class FormsComponent {
   authError : string = '';
   loginMessage: string = '';
   isLoginError = new EventEmitter<boolean>(false)
+  addProductMessage: string ='';
   constructor( private router: Router,private http:HttpClient) { }
   ngOnInit(): void {
   }
@@ -21,22 +22,11 @@ export class FormsComponent {
     data,
       { observe: 'response' }
     ).subscribe((result) => {
-      localStorage.setItem('data', JSON.stringify(result.body))
+      // localStorage.setItem('data', JSON.stringify(result.body))
+      this.addProductMessage = "Registration is done successfully"
     });
   }
-  userLogin(data: Login) {
-    // console.log(data);
-    this.http.get(`http://localhost:3000/info?email=${data.email}&password=${data.password}`,
-      { observe: 'response' }
-    ).subscribe((result: any) => {
-      if (result && result.body && result.body.length) {
-        localStorage.setItem('data', JSON.stringify(result.body))
-        this.router.navigate(['dashboard'])
-      } else {
-        this.isLoginError.emit(true);
-      }
-    })
-  }
+  
   signIn(data:Login){
     this.authError = '';
     this.userLogin(data);
@@ -46,13 +36,27 @@ export class FormsComponent {
       }
     })
   }
+  userLogin(data: Login) {
+    // console.log(data);
+    this.http.get(`http://localhost:3000/info?email=${data.email}&password=${data.password}`,
+      { observe: 'response' }
+    ).subscribe((result: any) => {
+      if (result && result.body && result.body.length) {
+        // localStorage.setItem('data', JSON.stringify(result.body))
+        this.router.navigate(['dashboard'])
+      } else {
+        this.isLoginError.emit(true);
+      }
+    })
+  }
+ 
   openLogin() {
     this.showLogin = true;
   }
   openSignUp() {
     this.showLogin = false;
   }
-  handleClear(){
-    this.showLogin = true;
-  }
+  // handleClear(){
+  //   this.showLogin = true;
+  // }
 }
