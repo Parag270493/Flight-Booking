@@ -11,6 +11,12 @@
       "password": "abc@123",
       "email": "pa@gmail.com",
       "id": 2
+    },
+    {
+      "name": "parag",
+      "password": "parag",
+      "email": "parag@gmail.com",
+      "id": 3
     }
   ],
   "dashboard": [
@@ -24,6 +30,39 @@
       "children": "",
       "infant": "",
       "id": 3
+    },
+    {
+      "from": "Banglore",
+      "to": "Pune",
+      "date": "20/03/2022",
+      "preffered": "indiGo",
+      "seating": "economy",
+      "adult": 1,
+      "children": 1,
+      "infant": 1,
+      "id": 4
+    },
+    {
+      "from": "Pune",
+      "to": "Nagpur",
+      "date": "20/03/2022",
+      "preffered": "indiGo",
+      "seating": "business",
+      "adult": 1,
+      "children": 1,
+      "infant": 1,
+      "id": 5
+    },
+    {
+      "from": "Nagpur",
+      "to": "Pune",
+      "date": "20/03/2023",
+      "preffered": "indiGo",
+      "seating": "economy",
+      "adult": 1,
+      "children": 1,
+      "infant": 1,
+      "id": 6
     }
   ],
   "list": [
@@ -46,22 +85,52 @@
       "time": "5:00 PM"
     },
     {
-      "flightId": "#59",
+      "flightId": "#593",
       "from": "Nagpur",
       "to": "Mumbai",
       "time": "5:00 PM"
     },
     {
-      "flightId": "#69",
+      "flightId": "#598",
       "from": "Nagpur",
       "to": "Banglore",
       "time": "5:00 PM"
     },
     {
-      "flightId": "#69",
+      "flightId": "#769",
+      "from": "Nagpur",
+      "to": "Banglore",
+      "time": "8:00 PM"
+    },
+    {
+      "flightId": "#369",
+      "from": "Nagpur",
+      "to": "Mumbai",
+      "time": "12:00 PM"
+    },
+    {
+      "flightId": "#869",
       "from": "Banglore",
       "to": "Pune",
       "time": "5:00 PM"
+    },
+    {
+      "flightId": "#589",
+      "from": "Banglore",
+      "to": "Pune",
+      "time": "12:00 PM"
+    },
+    {
+      "flightId": "#856",
+      "from": "Pune",
+      "to": "Nagpur",
+      "time": "9:00 PM"
+    },
+    {
+      "flightId": "#786",
+      "from": "Pune",
+      "to": "Nagpur",
+      "time": "8:00 AM"
     }
   ]
 }

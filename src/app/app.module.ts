@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { FormsComponent } from './forms/forms.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
+import { FlightPageComponent } from './flight-page/flight-page.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HeaderComponent } from './header/header.component';
     FormsComponent,
     DashboardComponent,
     HeaderComponent,
+    FlightPageComponent,
   ],
   imports: [
     BrowserModule,
