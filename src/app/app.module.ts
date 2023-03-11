@@ -10,6 +10,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { FlightPageComponent } from './flight-page/flight-page.component';
 import { ShowListComponent } from './show-list/show-list.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NgConfirmModule} from 'ng-confirm-box';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ShowListComponent } from './show-list/show-list.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(), // ToastrModule added
+    NgConfirmModule
   ],
   providers: [],
   bootstrap: [AppComponent]

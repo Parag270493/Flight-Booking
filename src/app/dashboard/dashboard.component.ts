@@ -32,6 +32,6 @@ export class DashboardComponent {
     });
   }
   bookFlight(){
-    this.flightBookedMessage = `Flight is Booked from ${this.showNameOfDepature} to ${this.showNameOfDestination}`
+    this.flightBookedMessage = `Flight is Booked from ${this.showNameOfDepature} to ${this.showNameOfDestination}`;
   }
 }

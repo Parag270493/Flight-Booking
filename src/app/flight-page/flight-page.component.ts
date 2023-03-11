@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Input } from '@angular/core';
-import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-flight-page',
@@ -20,8 +20,6 @@ export class FlightPageComponent {
     })
   }
 
-  bookFlight() {
-    this.route.navigate(['forms'])
-  }
+  
  
 }

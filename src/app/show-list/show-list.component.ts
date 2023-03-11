@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { NgConfirmService } from 'ng-confirm-box';
 
 @Component({
   selector: 'app-show-list',
@@ -10,9 +11,15 @@ export class ShowListComponent {
   @Input() showFlightSearch: any
   showTable: boolean = false;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,private confirmService: NgConfirmService) { }
 
   showLoginForm() {
-    this.router.navigate(['forms']);
+    this.confirmService.showConfirm("Before Booking, Please Singup",
+      () => {
+        this.router.navigate(['forms'])
+      },
+      () => {
+        this.router.navigate(['/'])
+      })
   }
 }

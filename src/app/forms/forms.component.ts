@@ -2,6 +2,7 @@ import { Component, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { SingnUp,Login } from '../dataType';
 import { HttpClient } from '@angular/common/http';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-forms',
@@ -13,7 +14,7 @@ export class FormsComponent {
   registrationErrorMessage : string = '';
   isLoginError = new EventEmitter<boolean>(false)
   addProductMessage: string ='';
-  constructor( private router: Router,private http:HttpClient) { }
+  constructor( private router: Router,private http:HttpClient,private toastr:ToastrService) { }
   ngOnInit(): void {
   }
   signUp(data: SingnUp): void {
@@ -21,7 +22,7 @@ export class FormsComponent {
     data,
       { observe: 'response' }
     ).subscribe((result) => {
-      this.addProductMessage = "Registration is done successfully"
+      this.toastr.success("Registration is done successfully");
     });
   }
 
@@ -30,7 +31,7 @@ export class FormsComponent {
     this.userLogin(data);
     this.isLoginError.subscribe((isError)=>{
       if(isError){
-        this.registrationErrorMessage = 'Email or Password is incorrect'; 
+        this.toastr.error("Email or Password is incorrect")
       }
     })
   }
