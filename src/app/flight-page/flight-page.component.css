@@ -19,7 +19,7 @@
     align-items: center;
 }
  #input-group{
-    width: 218px;
+    width: 150px;
     margin: -3px;
     border-top: none;
     border-left: none;
@@ -27,6 +27,11 @@
     outline: none;
     background: transparent;
     color: black;
+    transition: width 1s;
+    font-family: 'Rubik', sans-serif;
+}
+#input-group:hover{
+    width: 200px;
 }
 .flightSearch {
     width: 119px;

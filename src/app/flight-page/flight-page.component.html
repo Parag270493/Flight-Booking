@@ -19,34 +19,12 @@
                 </select>
             </div>
             <div class="searchForm">
-                <a> <button (click)="showFlightListTable" type="submit"
+                <a> <button [disabled]="FlightInfo.invalid" type="submit"
                         class="btn btn-warning text-white search flightSearch">Search Flight</button>
                 </a>
             </div>
         </div>
     </form>
 
-    <div *ngIf="showFlightTable" class="flight-list">
-        <h1 class="list">Flight List</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Flight ID</th>
-                    <th>Departure</th>
-                    <th>Destination</th>
-                    <th>Time</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let item of showFlightSearch">
-                    <td class="col-md-2">{{ item.flightId }}</td>
-                    <td>{{ item.from }}</td>
-                    <td>{{ item.to }}</td>
-                    <td>{{item.time}}</td>
-                    <td><button (click)="bookFlight()">Book Now</button></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <app-show-list *ngIf="showFlightTable" [showFlightSearch]="listOfFlightSearch"></app-show-list>
 </div>

@@ -9,6 +9,7 @@ import { FormsComponent } from './forms/forms.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { FlightPageComponent } from './flight-page/flight-page.component';
+import { ShowListComponent } from './show-list/show-list.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FlightPageComponent } from './flight-page/flight-page.component';
     DashboardComponent,
     HeaderComponent,
     FlightPageComponent,
+    ShowListComponent,
   ],
   imports: [
     BrowserModule,

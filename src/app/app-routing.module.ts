@@ -6,16 +6,16 @@ import { FormsComponent } from './forms/forms.component';
 
 const routes: Routes = [
   {
+    path:'',
+    component:FlightPageComponent
+  },
+  {
     path:'forms',
     component:FormsComponent
   },
   {
     path:'dashboard',
     component:DashboardComponent
-  },
-  {
-    path:'',
-    component:FlightPageComponent
   }
 ];
 

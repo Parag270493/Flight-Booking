@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Sono:wght@500&display=swap');
 body {
     font-family: sans-serif;
     background-image: url(./assets/Image/airplane-659687_1920.jpg);
@@ -36,4 +37,6 @@ body {
 .error-p{
     color: red;
 }
-
+button:disabled{
+    cursor: not-allowed;
+  }

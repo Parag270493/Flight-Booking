@@ -97,9 +97,6 @@
     font-size: 15px;
     margin-top: -9px
 }
-button:disabled{
-    cursor: not-allowed;
-  }
   .form-group {
     margin-bottom: 1rem;
     margin-left: -33rem;
