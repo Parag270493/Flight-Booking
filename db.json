@@ -17,6 +17,12 @@
       "password": "parag",
       "email": "parag@gmail.com",
       "id": 3
+    },
+    {
+      "name": "Parag",
+      "password": "parag",
+      "email": "parag@gmail.com",
+      "id": 4
     }
   ],
   "dashboard": [
@@ -63,6 +69,138 @@
       "children": 1,
       "infant": 1,
       "id": 6
+    },
+    {
+      "from": "Banglore",
+      "to": "Mumbai",
+      "date": "20/03/2023",
+      "preffered": "indiGo",
+      "seating": "business",
+      "adult": 1,
+      "children": 1,
+      "infant": 1,
+      "id": 7
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "20/03/2023",
+      "preffered": "indiGo",
+      "seating": "economy",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 8
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "20/03/2023",
+      "preffered": "indiGo",
+      "seating": "economy",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 9
+    },
+    {
+      "from": "pune",
+      "to": "banglore",
+      "date": "20/03/2023",
+      "preffered": "indiGo",
+      "seating": "business",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 10
+    },
+    {
+      "from": "pune",
+      "to": "mumbai",
+      "date": "20/03/2023",
+      "preffered": "indiGo",
+      "seating": "business",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 11
+    },
+    {
+      "from": "pune",
+      "to": "mumbai",
+      "date": "20/03/2023",
+      "preffered": "indiGo",
+      "seating": "business",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 12
+    },
+    {
+      "from": "banglore",
+      "to": "pune",
+      "date": "20/03/2023",
+      "preffered": "indiGo",
+      "seating": "business",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 13
+    },
+    {
+      "from": "banglore",
+      "to": "pune",
+      "date": "20/03/2023",
+      "preffered": "airIndia",
+      "seating": "economy",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 14
+    },
+    {
+      "from": "banglore",
+      "to": "pune",
+      "date": "20/03/21022",
+      "preffered": "indiGo",
+      "seating": "business",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 15
+    },
+    {
+      "from": "Nagpur",
+      "to": "Pune",
+      "date": "20/03/2023",
+      "preffered": "airIndia",
+      "seating": "business",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 16
+    },
+    {
+      "from": "Nagpur",
+      "to": "Pune",
+      "date": "20/03/2023",
+      "preffered": "airIndia",
+      "seating": "business",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 17
+    },
+    {
+      "from": "Pune",
+      "to": "nagpur",
+      "date": "20/03/2023",
+      "preffered": "airIndia",
+      "seating": "economy",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 18
     }
   ],
   "list": [

@@ -107,6 +107,7 @@
 }
 .flight-list {
     margin-top: -16rem;
+    margin-left: -7rem;
 }
 table{
     text-align: left;
@@ -117,11 +118,17 @@ table{
 table td , table th{
     border: 1px solid white;
     padding: 10px;
-    min-width: 160pxs;
+    width: 13rem;
+    font-family: 'Rubik', sans-serif;
+    /* min-width: 160pxs; */
 }
 .list{
     color: #fff;
 }
 .flightMessage{
     color: white;
+}
+.flightBooking{
+    width: 102%;
+    border-radius: 20px;
 }

@@ -20,3 +20,7 @@ table td , table th{
     left: 62%;
     top: 25%;
 }
+.bookButton {
+    width: 109%;
+    border-radius: 20px;
+}

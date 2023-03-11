@@ -77,10 +77,7 @@
                     <td>{{ item.from }}</td>
                     <td>{{ item.to }}</td>
                     <td>{{item.time}}</td> 
-                    <td><button (click)="bookFlight()">Book Now</button></td>
-                    <!-- <td>{{ item.color }}</td>
-          <td>{{ item.category }}</td> -->
-                    <!-- <td><button (click)="deleteProduct(item.id)">Delete</button></td> -->
+                    <td><button class="btn btn-warning text-white flightBooking" (click)="bookFlight()">Book Now</button></td>
                 </tr>
             </tbody>
         </table>
