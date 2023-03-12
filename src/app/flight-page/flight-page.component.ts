@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { FlightService } from '../services/flight.service';
 
 
 @Component({
@@ -11,8 +12,11 @@ import { Router } from '@angular/router';
 export class FlightPageComponent {
   listOfFlightSearch: any;
   showFlightTable:boolean = false;
-  constructor(private http: HttpClient,private route:Router) { }
-
+  constructor(private http: HttpClient,private route:Router,private flightService:FlightService) { }
+ 
+  ngOnInit(): void {
+    this.flightService.reloadUser();
+  }
   flightSearch(data: any) {
     this.http.get('http://localhost:3000/list').subscribe((result: any) => {
       this.listOfFlightSearch = result.filter((flight: any) => flight.from.toLowerCase() == data.where.toLowerCase() || flight.to.toLowerCase() == data.where.toLowerCase());

@@ -1,3 +1,22 @@
 <nav class="nav">
-    <a class="logo" routerLink="/">Air Line</a>
+
+    <div [ngSwitch] = 'menuType'>
+            
+        <ul *ngSwitchCase = "'default'">
+            <li><a class="logo" routerLink="/">Air Line</a></li>
+        </ul>
+
+        <div class="dashboardMenu">
+
+            <ul *ngSwitchCase = "'flight'">
+                <li class="flightLogo"><a class="logo" routerLink="/">Air Line</a></li>
+                <div class="headerMenu">
+                    <li><a (click)="logout()">Logout</a></li>
+                    <li><a style="cursor: text;">{{userName | titlecase}}</a></li>
+    
+                </div>
+            </ul>
+        </div>
+    
+    </div>
 </nav>

@@ -1,6 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
+import { NgConfirmService } from 'ng-confirm-box';
+import { ToastrService } from 'ngx-toastr';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,7 +16,15 @@ export class DashboardComponent {
   flightBookedMessage : string = '';
   showNameOfDepature:any;
   showNameOfDestination:any;
-  constructor(private route:Router,private http:HttpClient){}
+  isUserLoggedIn = new BehaviorSubject<boolean>(false);
+  constructor(private route:Router,private http:HttpClient,private confirmService: NgConfirmService,private toastr:ToastrService){}
+ 
+  ngOnInit():void{
+    if (!localStorage.getItem('flight')) {
+      this.isUserLoggedIn.next(true);
+      this.route.navigate(['/']);
+    }
+  }
   ticketBook(data:any){
     this.showNameOfDepature = data.from
     this.showNameOfDestination = data.to
@@ -32,6 +43,14 @@ export class DashboardComponent {
     });
   }
   bookFlight(){
-    this.flightBookedMessage = `Flight is Booked from ${this.showNameOfDepature} to ${this.showNameOfDestination}`;
+    this.confirmService.showConfirm("Are sure you want to book ticket",
+    () => {
+      this.flightBookedMessage = `Ticket is Booked from ${this.showNameOfDepature} to ${this.showNameOfDestination}`;
+      this.toastr.success('Ticket is Booked');
+    },
+    () => {
+      this.route.navigate(['dashboard']);
+    })
+    
   }
 }

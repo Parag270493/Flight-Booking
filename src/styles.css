@@ -3,8 +3,6 @@
 @import 'ngx-toastr/toastr';
 body {
     font-family: sans-serif;
-    background-image: url(./assets/Image/airplane-659687_1920.jpg);
-    background-size: cover;
 }
 
 .container {

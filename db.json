@@ -11,18 +11,6 @@
       "password": "abc@123",
       "email": "pa@gmail.com",
       "id": 2
-    },
-    {
-      "name": "parag",
-      "password": "parag",
-      "email": "parag@gmail.com",
-      "id": 3
-    },
-    {
-      "name": "Parag",
-      "password": "parag",
-      "email": "parag@gmail.com",
-      "id": 4
     }
   ],
   "dashboard": [
@@ -201,6 +189,171 @@
       "children": "",
       "infant": "",
       "id": 18
+    },
+    {
+      "from": "Pune",
+      "to": "nagpur",
+      "date": "2023-03-09",
+      "preffered": "airIndia",
+      "seating": "economy",
+      "adult": 1,
+      "children": 1,
+      "infant": 1,
+      "id": 19
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "2023-03-11",
+      "preffered": "indiGo",
+      "seating": "first",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 20
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "2023-03-16",
+      "preffered": "airIndia",
+      "seating": "economy",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 21
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "2023-03-16",
+      "preffered": "airIndia",
+      "seating": "economy",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 22
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "2023-03-10",
+      "preffered": "indiGo",
+      "seating": "economy",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 23
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "2023-03-29",
+      "preffered": "airIndia",
+      "seating": "economy",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 24
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "2023-03-11",
+      "preffered": "airIndia",
+      "seating": "economy",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 25
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "2023-03-23",
+      "preffered": "airIndia",
+      "seating": "economy",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 26
+    },
+    {
+      "from": "Pune",
+      "to": "nagpur",
+      "date": "2023-03-24",
+      "preffered": "airIndia",
+      "seating": "economy",
+      "adult": 1,
+      "children": 1,
+      "infant": 1,
+      "id": 27
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "2023-03-18",
+      "preffered": "airIndia",
+      "seating": "business",
+      "adult": 1,
+      "children": 1,
+      "infant": 1,
+      "id": 28
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "2023-03-18",
+      "preffered": "SpiceJet",
+      "seating": "economy",
+      "adult": 1,
+      "children": 1,
+      "infant": 1,
+      "id": 29
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "2023-03-17",
+      "preffered": "airIndia",
+      "seating": "economy",
+      "adult": 1,
+      "children": 1,
+      "infant": 1,
+      "id": 30
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "2023-03-17",
+      "preffered": "indiGo",
+      "seating": "business",
+      "adult": 1,
+      "children": 1,
+      "infant": 1,
+      "id": 31
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "2023-03-24",
+      "preffered": "airIndia",
+      "seating": "economy",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 32
+    },
+    {
+      "from": "pune",
+      "to": "nagpur",
+      "date": "2023-03-16",
+      "preffered": "airIndia",
+      "seating": "economy",
+      "adult": 1,
+      "children": "",
+      "infant": "",
+      "id": 33
     }
   ],
   "list": [

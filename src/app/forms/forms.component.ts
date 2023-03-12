@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { SingnUp,Login } from '../dataType';
 import { HttpClient } from '@angular/common/http';
 import { ToastrService } from 'ngx-toastr';
+import { FlightService } from '../services/flight.service';
 
 @Component({
   selector: 'app-forms',
@@ -12,37 +13,20 @@ import { ToastrService } from 'ngx-toastr';
 export class FormsComponent {
   showLogin = false;
   registrationErrorMessage : string = '';
-  isLoginError = new EventEmitter<boolean>(false)
   addProductMessage: string ='';
-  constructor( private router: Router,private http:HttpClient,private toastr:ToastrService) { }
+  constructor( private router: Router,private http:HttpClient,private toastr:ToastrService,private flightService:FlightService) { }
   ngOnInit(): void {
+    this.flightService.reloadUser();
   }
-  signUp(data: SingnUp): void {
-    this.http.post('http://localhost:3000/info',
-    data,
-      { observe: 'response' }
-    ).subscribe((result) => {
-      this.toastr.success("Registration is done successfully");
-    });
+  userSignUp(data:SingnUp){
+    this.flightService.signUp(data);
   }
 
   signIn(data:Login){
-    // this.authError = '';
-    this.userLogin(data);
-    this.isLoginError.subscribe((isError)=>{
+    this.flightService.userLogin(data);
+    this.flightService.isLoginError.subscribe((isError)=>{
       if(isError){
         this.toastr.error("Email or Password is incorrect")
-      }
-    })
-  }
-  userLogin(data: Login) {
-    this.http.get(`http://localhost:3000/info?email=${data.email}&password=${data.password}`,
-      { observe: 'response' }
-    ).subscribe((result: any) => {
-      if (result && result.body && result.body.length) {
-        this.router.navigate(['dashboard'])
-      } else {
-        this.isLoginError.emit(true);
       }
     })
   }
